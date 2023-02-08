@@ -14,12 +14,16 @@ body {
 }
 
 .container {
-    
+    width: 55rem;
+    margin: 0 auto;
+    background-color: khaki;
+    padding: 3rem 2rem;
 }
 
 .column {
     text-align: center;
-    padding: 2rem;
+    background-color: maroon;
+    padding: 1rem;
     color: white;
     font-weight: 700;
 }
