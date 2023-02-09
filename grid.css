@@ -1,11 +1,33 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(12rem,1fr));
+    grid-auto-rows: 12rem;
+    grid-auto-flow: dense;
     gap: .3rem;
 }
 
-.column {
+.column {    
+    overflow: hidden;
+}
+
+.column img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.vertical {
+    grid-column: span 2;
+}
+
+.horizontal {
+    grid-row: span 2;
 }
 
 .column-1 {
